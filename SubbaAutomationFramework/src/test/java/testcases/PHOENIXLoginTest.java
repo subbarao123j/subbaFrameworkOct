@@ -1,6 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import helper.BaseClass;
@@ -15,8 +16,9 @@ public class PHOENIXLoginTest extends BaseClass {
 	
 	PHOENIXAddCustomer addCustomer;
 
+	@Parameters({"username","password"})
 	@Test(description="",priority=1)
-	public void loginToDOMS() {
+	public void loginToDOMS(String uname,String pass) {
 
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
 		
@@ -31,11 +33,11 @@ public class PHOENIXLoginTest extends BaseClass {
 
 		logger.pass("Home Page Validated");
 		
-		login.enterUserName();
+		login.enterUserName(uname);
 
 		logger.info("Username entered");
 
-		login.enterPassword();
+		login.enterPassword(pass);
 
 		logger.info("Password entered");
 
