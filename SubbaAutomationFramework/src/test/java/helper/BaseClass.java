@@ -29,7 +29,9 @@ public class BaseClass {
 		
 		System.out.println("LOG:INFO- Before Suite Running- Setting up report");
 
-		ExtentHtmlReporter reporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/PHOENIX_"+Utility.getTime()+".html"));
+		//ExtentHtmlReporter reporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/PHOENIX_"+Utility.getTime()+".html"));
+		ExtentHtmlReporter reporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/PHOENIX.html"));
+
 		report=new ExtentReports();
 		report.attachReporter(reporter);
 		
