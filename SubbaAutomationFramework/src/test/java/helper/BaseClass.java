@@ -73,7 +73,9 @@ public class BaseClass {
 		else if(status==ITestResult.FAILURE)
 		{
 			try {
-				logger.fail("Test Failed "+result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				//logger.fail("Test Failed "+result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				logger.fail("Test Failed "+result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromBase64String(Utility.captureScreenshotBase64(driver)).build());
+
 			} catch (IOException e) {
 				System.out.println("Not able to attach Screenshot "+e.getMessage());
 			}

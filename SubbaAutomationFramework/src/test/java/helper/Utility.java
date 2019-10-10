@@ -119,7 +119,16 @@ public class Utility {
 		
 		return dest;
 	}
+	public static String captureScreenshotBase64(WebDriver driver)
+	{
 	
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		
+		String data=ts.getScreenshotAs(OutputType.BASE64);
+		
+		return "data:image/png;base64,"+data;
+		
+	}
 	
 	public static String getTime()
 	{
