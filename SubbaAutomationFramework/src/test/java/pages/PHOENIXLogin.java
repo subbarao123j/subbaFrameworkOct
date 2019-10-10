@@ -34,37 +34,41 @@ public class PHOENIXLogin {
 
 	public void enterUserName(String uname)
 	{
-		System.out.println("LOG:INFO Username Entered");
+		System.out.println("LOG:INFO Username Trying to enter");
 		Utility.waitForWebElement(driver, username).sendKeys(uname);
+		System.out.println("LOG:INFO Username Entered");
 	}
 	
 	public void enterPassword(String pass)
 	{
-		System.out.println("LOG:INFO Password Entered");
+		System.out.println("LOG:INFO Password Trying to enter");
 		Utility.waitForWebElement(driver, password).sendKeys(pass);
+		System.out.println("LOG:INFO Passworde Entered");
 	}
 	
 	
 	public void enterUserName()
 	{
-		System.out.println("LOG:INFO Username Entered");
+		
 		Utility.waitForWebElement(driver,username).sendKeys(DataProviderFactory.getExcel().getCellData("Login", 3, 0));
+		System.out.println("LOG:INFO Username Entered");
 	}
 	
 	public void enterPassword()
 	{
-		System.out.println("LOG:INFO Password Entered");
+		
 		Utility.waitForWebElement(driver, password).sendKeys(DataProviderFactory.getExcel().getCellData("Login", 3, 1));
+		System.out.println("LOG:INFO Password Entered");
 	}
 	
 	
 	
 	public void clickLoginButton()
 	{
-		System.out.println("LOG:INFO Clicked on login button"); 
+	
 		Utility.waitForWebElement(driver, loginButon);
 		loginButon.click();
-		
+		System.out.println("LOG:INFO Clicked on login button"); 
 	}
 	
 	

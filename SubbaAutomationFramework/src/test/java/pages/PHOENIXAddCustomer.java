@@ -66,21 +66,23 @@ public class PHOENIXAddCustomer {
 		; 
 		Utility.waitForWebElement(driver, customersAdding);
 		customersAdding.click();
-		System.out.println("LOG: Clicked adding clicked");
+		System.out.println("LOG:  adding clicked");
 	}
 	
 	//Name
 	
 	public void enterCustomerName(String cname)
 	{
-		System.out.println("LOG:INFO Username Entered");
+		
 		Utility.waitForWebElement(driver, customerName).sendKeys(cname);
+		System.out.println("LOG:INFO Customer Name Entered");
 	}
 	
 	public void enterCustomerName()
 	{
-		System.out.println("LOG:INFO Username Entered");
+		
 		Utility.waitForWebElement(driver,customerName).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 0));
+		System.out.println("LOG:INFO Customer Name Entered");
 	}
 	
 	
@@ -88,28 +90,32 @@ public class PHOENIXAddCustomer {
 	
 	public void enterCustomerCode(String cname)
 	{
-		System.out.println("LOG:INFO Username Entered");
+		System.out.println("LOG:INFO Customer code Entered");
 		Utility.waitForWebElement(driver, customerCode).sendKeys(cname);
+		System.out.println("LOG:INFO Customer code Entered");
 	}
 	
 	public void enterCustomerCode()
 	{
-		System.out.println("LOG:INFO Username Entered");
+	
 		Utility.waitForWebElement(driver,customerCode).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 1));
+		System.out.println("LOG:INFO Customer code Entered");
 	}
 	//penta code
 	
 	public void enterCustomerPentaCode(String cname)
 	{
-		System.out.println("LOG:INFO Username Entered");
+		
 		Utility.waitForWebElement(driver, customerPentaCode).sendKeys(cname);
+		
+		System.out.println("LOG:INFO PentaCode Entered");
 	}
 	
 	public void enterCustomerPentaCode()
 	{
 		
 		Utility.waitForWebElement(driver,customerPentaCode).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 2));
-		System.out.println("LOG:INFO Username Entered");
+		System.out.println("LOG:INFO PentaCode Entered");
 	}
 	//Save
 	public void savedClicked()
