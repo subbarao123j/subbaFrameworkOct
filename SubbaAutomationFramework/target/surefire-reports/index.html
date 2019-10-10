@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\kul_subbarao\eclipse-workspace1\SubbaAutomationFramework\XML Files\SMOKETestingDummy.xml</span>
+                    <span>C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.SmokeTestingDummy" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.PHOENIXLoginTest" hash-for-method="loginToDOMS">loginToDOMS</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.SmokeTestingDummy</span>
+              <span class="class-name">testcases.PHOENIXLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="loginToDOMS">
+                  </a> <!-- loginToDOMS -->
+                  <span class="method-name">loginToDOMS</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kul_subbarao\eclipse-workspace1\SubbaAutomationFramework\XML Files\SMOKETestingDummy.xml</span>
+            <span class="header-content">C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.SmokeTestingDummy&quot;/&gt;
+      &lt;class name=&quot;testcases.PHOENIXLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -186,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
-data.setCell(0, 2, 'testcases.SmokeTestingDummy')
-data.setCell(0, 3, 13);
+data.setCell(0, 1, 'loginToDOMS')
+data.setCell(0, 2, 'testcases.PHOENIXLoginTest')
+data.setCell(0, 3, 11453);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -219,11 +219,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.SmokeTestingDummy</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test1</span>
+              <div class="chronological-class-name">testcases.PHOENIXLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupBrowsers</span>
+                <span class="method-start">316 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginToDOMS</span>
+                <span class="method-start">7790 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">appendReport([TestResult name=loginToDOMS status=SUCCESS method=PHOENIXLoginTest.loginToDOMS()[pri:1, instance:te...)</span>
+                <span class="method-start">19244 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSessions</span>
+                <span class="method-start">20483 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

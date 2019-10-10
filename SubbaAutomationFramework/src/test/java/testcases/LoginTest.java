@@ -48,7 +48,8 @@ public class LoginTest extends BaseClass {
 	
 	adduserHRM.clickadmintab();
 	adduserHRM.clickadd();
-	adduserHRM.employName();
+	//adduserHRM.employName();
+	adduserHRM.employUserName();
 	adduserHRM.employPassword();
 	adduserHRM.confirmPassword();
 	

@@ -2,16 +2,39 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40" started-at="2019-10-09T03:02:40Z" finished-at="2019-10-09T03:02:40Z">
+  <suite name="Suite" duration-ms="21223" started-at="2019-10-10T03:16:33Z" finished-at="2019-10-10T03:16:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40" started-at="2019-10-09T03:02:40Z" finished-at="2019-10-09T03:02:40Z">
-      <class name="testcases.SmokeTestingDummy">
-        <test-method status="PASS" signature="test1()[pri:0, instance:testcases.SmokeTestingDummy@4e04a765]" name="test1" duration-ms="13" started-at="2019-10-09T11:02:40Z" finished-at="2019-10-09T11:02:40Z">
+    <test name="Test" duration-ms="21223" started-at="2019-10-10T03:16:33Z" finished-at="2019-10-10T03:16:54Z">
+      <class name="testcases.PHOENIXLoginTest">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@60addb54]" name="setupReport" is-config="true" duration-ms="300" started-at="2019-10-10T11:16:32Z" finished-at="2019-10-10T11:16:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- testcases.SmokeTestingDummy -->
+        </test-method> <!-- setupReport -->
+        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@60addb54]" name="setupBrowsers" is-config="true" duration-ms="7467" started-at="2019-10-10T11:16:33Z" finished-at="2019-10-10T11:16:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowsers -->
+        <test-method status="PASS" signature="loginToDOMS()[pri:1, instance:testcases.PHOENIXLoginTest@60addb54]" name="loginToDOMS" duration-ms="11453" started-at="2019-10-10T11:16:40Z" finished-at="2019-10-10T11:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToDOMS -->
+        <test-method status="PASS" signature="appendReport(org.testng.ITestResult)[pri:0, instance:testcases.PHOENIXLoginTest@60addb54]" name="appendReport" is-config="true" duration-ms="1239" started-at="2019-10-10T11:16:51Z" finished-at="2019-10-10T11:16:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToDOMS status=SUCCESS method=PHOENIXLoginTest.loginToDOMS()[pri:1, instance:testcases.PHOENIXLoginTest@60addb54] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appendReport -->
+        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@60addb54]" name="closeSessions" is-config="true" duration-ms="1039" started-at="2019-10-10T11:16:53Z" finished-at="2019-10-10T11:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSessions -->
+      </class> <!-- testcases.PHOENIXLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

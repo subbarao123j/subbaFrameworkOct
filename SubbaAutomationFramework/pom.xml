@@ -86,7 +86,8 @@
 				
 				
 					<suiteXmlFiles>
-						<suiteXmlFile>XML Files\${xmlfiles}</suiteXmlFile>
+						<suiteXmlFile>XMLFiles\${xmlfiles}</suiteXmlFile>
+						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
