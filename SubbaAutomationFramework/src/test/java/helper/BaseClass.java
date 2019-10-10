@@ -65,7 +65,7 @@ public class BaseClass {
 		{
 			try {
 			
-				logger.pass("Test Scenario Passed ", MediaEntityBuilder.createScreenCaptureFromPath(Utility.captureScreenshot(driver)).build());
+				logger.pass("Test Scenario Passed ",MediaEntityBuilder.createScreenCaptureFromBase64String(Utility.captureScreenshotBase64(driver)).build());
 			} catch (IOException e) {
 				System.out.println("Not able to attach Screenshot "+e.getMessage());
 			}
