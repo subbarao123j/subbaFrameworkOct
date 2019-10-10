@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19474" started-at="2019-10-10T02:54:36Z" finished-at="2019-10-10T02:54:55Z">
+  <suite name="Suite" duration-ms="26885" started-at="2019-10-10T13:23:36Z" finished-at="2019-10-10T13:24:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19474" started-at="2019-10-10T02:54:36Z" finished-at="2019-10-10T02:54:55Z">
+    <test name="Test" duration-ms="26885" started-at="2019-10-10T13:23:36Z" finished-at="2019-10-10T13:24:02Z">
       <class name="testcases.PHOENIXLoginTest">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="setupReport" is-config="true" duration-ms="281" started-at="2019-10-10T10:54:36Z" finished-at="2019-10-10T10:54:36Z">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="setupReport" is-config="true" duration-ms="297" started-at="2019-10-10T21:23:35Z" finished-at="2019-10-10T21:23:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="setupBrowsers" is-config="true" duration-ms="6781" started-at="2019-10-10T10:54:36Z" finished-at="2019-10-10T10:54:43Z">
+        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="setupBrowsers" is-config="true" duration-ms="9952" started-at="2019-10-10T21:23:36Z" finished-at="2019-10-10T21:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowsers -->
-        <test-method status="PASS" signature="loginToDOMS()[pri:1, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="loginToDOMS" duration-ms="10643" started-at="2019-10-10T10:54:43Z" finished-at="2019-10-10T10:54:53Z">
+        <test-method status="PASS" signature="loginToDOMS()[pri:1, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="loginToDOMS" duration-ms="13971" started-at="2019-10-10T21:23:46Z" finished-at="2019-10-10T21:24:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToDOMS -->
-        <test-method status="PASS" signature="appendReport(org.testng.ITestResult)[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="appendReport" is-config="true" duration-ms="1060" started-at="2019-10-10T10:54:53Z" finished-at="2019-10-10T10:54:54Z">
+        <test-method status="PASS" signature="appendReport(org.testng.ITestResult)[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="appendReport" is-config="true" duration-ms="1388" started-at="2019-10-10T21:24:00Z" finished-at="2019-10-10T21:24:01Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appendReport -->
-        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="closeSessions" is-config="true" duration-ms="955" started-at="2019-10-10T10:54:54Z" finished-at="2019-10-10T10:54:55Z">
+        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="closeSessions" is-config="true" duration-ms="1558" started-at="2019-10-10T21:24:01Z" finished-at="2019-10-10T21:24:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSessions -->
