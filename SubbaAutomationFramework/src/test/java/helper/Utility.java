@@ -103,7 +103,9 @@ public class Utility {
 	
 		String time=getTime();
 		
-		String dest=System.getProperty("user.dir")+"/Screenshot/PHOENIX"+time+".png";
+		//String dest=System.getProperty("user.dir")+"/Screenshot/PHOENIX"+time+".png";
+		
+		String dest=System.getProperty("user.dir")+"\\Screenshot\\PHOENIX"+time+".png";
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		

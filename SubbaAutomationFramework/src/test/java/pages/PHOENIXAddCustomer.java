@@ -54,19 +54,19 @@ public class PHOENIXAddCustomer {
 	
 	public void customersMenuclick()
 	{
-		System.out.println("LOG: Clicked Customer menu "); 
+		
 		Utility.waitForWebElement(driver, customersMenu);
 		customersMenu.click();
-		
+		System.out.println("LOG: Clicked Customer menu "); 
 	}
 	
 	//add company
 	public void customersAddCompanyclick()
 	{
-		System.out.println("LOG: Clicked adding clicked"); 
+		; 
 		Utility.waitForWebElement(driver, customersAdding);
 		customersAdding.click();
-		
+		System.out.println("LOG: Clicked adding clicked");
 	}
 	
 	//Name
@@ -107,16 +107,17 @@ public class PHOENIXAddCustomer {
 	
 	public void enterCustomerPentaCode()
 	{
-		System.out.println("LOG:INFO Username Entered");
+		
 		Utility.waitForWebElement(driver,customerPentaCode).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 2));
+		System.out.println("LOG:INFO Username Entered");
 	}
 	//Save
 	public void savedClicked()
 	{
-		System.out.println("LOG: Clicked adding clicked"); 
+		 
 		Utility.waitForWebElement(driver, customerSubmit);
 		customerSubmit.click();
-		
+		System.out.println("LOG: Clicked adding clicked");
 	}
 	
 			
