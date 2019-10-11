@@ -15,7 +15,7 @@ public class PHOENIXLoginTest extends BaseClass {
 	PHOENIXLogOut logOut;
 	
 	PHOENIXAddCustomer addCustomer;
-
+//Testing Demo
 	@Parameters({"username","password"})
 	@Test(description="",priority=1)
 	public void loginToDOMS(String uname,String pass) {
