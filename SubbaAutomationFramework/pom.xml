@@ -74,6 +74,8 @@
 				<xmlfiles>${xmlfiles}</xmlfiles>
 				<UserName>${username}</UserName>
 				<Password>${password}</Password>
+				<Browser>${Browser}</Browser>
+				<URL>${URL}</URL>
 				
 				<!-- <Browser>${Browser}</Browser>
 				<URL>${URL}</URL>

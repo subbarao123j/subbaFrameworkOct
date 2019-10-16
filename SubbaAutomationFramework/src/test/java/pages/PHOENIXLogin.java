@@ -1,6 +1,8 @@
 package pages;
 
 
+import javax.swing.text.Utilities;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -69,6 +71,8 @@ public class PHOENIXLogin {
 		Utility.waitForWebElement(driver, loginButon);
 		loginButon.click();
 		System.out.println("LOG:INFO Clicked on login button"); 
+		
+		
 	}
 	
 	
