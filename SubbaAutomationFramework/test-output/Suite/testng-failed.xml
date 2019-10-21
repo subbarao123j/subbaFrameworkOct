@@ -13,7 +13,6 @@
           <include name="loginToDOMS"/>
           <include name="setupBrowsers"/>
           <include name="closeSessions"/>
-          <include name="appendReport"/>
           <include name="setupReport"/>
         </methods>
       </class> <!-- testcases.PHOENIXLoginTest -->

@@ -15,6 +15,8 @@ public class PHOENIXLoginTest extends BaseClass {
 	PHOENIXLogOut logOut;
 	
 	PHOENIXAddCustomer addCustomer;
+	
+	
 //Testing Demo
 	@Parameters({"username","password"})
 	@Test(description="",priority=1)
@@ -23,6 +25,8 @@ public class PHOENIXLoginTest extends BaseClass {
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
 		addCustomer = PageFactory.initElements(driver, PHOENIXAddCustomer.class);
 		logOut = PageFactory.initElements(driver, PHOENIXLogOut.class);
+		
+		
 
 		logger = report.createTest("Login Test for Phoenix");
 
