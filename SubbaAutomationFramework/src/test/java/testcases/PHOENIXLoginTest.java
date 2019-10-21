@@ -18,7 +18,7 @@ public class PHOENIXLoginTest extends BaseClass {
 //Testing Demo
 	@Parameters({"username","password"})
 	@Test(description="",priority=1)
-	public void loginToDOMS(String uname,String pass) {
+	public void loginToDOMS(String uname, String pass) {
 
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
 		

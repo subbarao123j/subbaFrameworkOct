@@ -2,30 +2,30 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8710" started-at="2019-10-21T09:43:26Z" finished-at="2019-10-21T09:43:35Z">
+  <suite name="Default suite" duration-ms="8598" started-at="2019-10-21T10:06:18Z" finished-at="2019-10-21T10:06:27Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8710" started-at="2019-10-21T09:43:26Z" finished-at="2019-10-21T09:43:35Z">
+    <test name="Default test" duration-ms="8598" started-at="2019-10-21T10:06:18Z" finished-at="2019-10-21T10:06:27Z">
       <class name="testcases.PHOENIXLoginTest">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupReport" is-config="true" duration-ms="412" started-at="2019-10-21T17:43:26Z" finished-at="2019-10-21T17:43:26Z">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupReport" is-config="true" duration-ms="412" started-at="2019-10-21T18:06:18Z" finished-at="2019-10-21T18:06:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupBrowsers" is-config="true" duration-ms="7532" started-at="2019-10-21T17:43:26Z" finished-at="2019-10-21T17:43:34Z">
+        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupBrowsers" is-config="true" duration-ms="7377" started-at="2019-10-21T18:06:18Z" finished-at="2019-10-21T18:06:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowsers -->
-        <test-method status="SKIP" signature="loginToDOMS(java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@cb5822]" name="loginToDOMS" duration-ms="0" started-at="2019-10-21T17:43:34Z" finished-at="2019-10-21T17:43:34Z">
+        <test-method status="SKIP" signature="loginToDOMS(java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@cb5822]" name="loginToDOMS" duration-ms="0" started-at="2019-10-21T18:06:26Z" finished-at="2019-10-21T18:06:26Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'username' is required by @Test on method loginToDOMS but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml]]>
+in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-911168662\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'username' is required by @Test on method loginToDOMS but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml
+in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-911168662\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
@@ -54,11 +54,11 @@ in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToDOMS -->
-        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="closeSessions" is-config="true" duration-ms="1141" started-at="2019-10-21T17:43:34Z" finished-at="2019-10-21T17:43:35Z">
+        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="closeSessions" is-config="true" duration-ms="1179" started-at="2019-10-21T18:06:26Z" finished-at="2019-10-21T18:06:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSessions -->
       </class> <!-- testcases.PHOENIXLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

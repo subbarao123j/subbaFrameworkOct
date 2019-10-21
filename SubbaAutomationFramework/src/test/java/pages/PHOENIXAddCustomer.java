@@ -26,6 +26,8 @@ public class PHOENIXAddCustomer {
 	@FindBy(xpath="//button[@id='add-company']") WebElement customersAdding;
 	
 	
+	
+	@FindBy(id="") WebElement  abc ;
 		
 	@FindBy(name="name") WebElement customerName;
 	
