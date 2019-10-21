@@ -21,10 +21,7 @@ public class PHOENIXLoginTest extends BaseClass {
 	public void loginToDOMS(String uname, String pass) {
 
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
-		
 		addCustomer = PageFactory.initElements(driver, PHOENIXAddCustomer.class);
-		
-
 		logOut = PageFactory.initElements(driver, PHOENIXLogOut.class);
 
 		logger = report.createTest("Login Test for Phoenix");
@@ -72,10 +69,5 @@ public class PHOENIXLoginTest extends BaseClass {
 		logger.pass("User is able to logout");
 	}
 
-	/*@Test(description="This test will add trainer")
-	public void addTrainer() 
-	{
-
-	}*/
 
 }
