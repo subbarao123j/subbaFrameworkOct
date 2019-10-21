@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26885" started-at="2019-10-10T13:23:36Z" finished-at="2019-10-10T13:24:02Z">
+  <suite name="Suite" duration-ms="8710" started-at="2019-10-21T09:43:26Z" finished-at="2019-10-21T09:43:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26885" started-at="2019-10-10T13:23:36Z" finished-at="2019-10-10T13:24:02Z">
+    <test name="Test" duration-ms="8710" started-at="2019-10-21T09:43:26Z" finished-at="2019-10-21T09:43:35Z">
       <class name="testcases.PHOENIXLoginTest">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="setupReport" is-config="true" duration-ms="297" started-at="2019-10-10T21:23:35Z" finished-at="2019-10-10T21:23:36Z">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupReport" is-config="true" duration-ms="412" started-at="2019-10-21T17:43:26Z" finished-at="2019-10-21T17:43:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="setupBrowsers" is-config="true" duration-ms="9952" started-at="2019-10-10T21:23:36Z" finished-at="2019-10-10T21:23:46Z">
+        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupBrowsers" is-config="true" duration-ms="7532" started-at="2019-10-21T17:43:26Z" finished-at="2019-10-21T17:43:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowsers -->
-        <test-method status="PASS" signature="loginToDOMS()[pri:1, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="loginToDOMS" duration-ms="13971" started-at="2019-10-10T21:23:46Z" finished-at="2019-10-10T21:24:00Z">
+        <test-method status="SKIP" signature="loginToDOMS(java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@cb5822]" name="loginToDOMS" duration-ms="0" started-at="2019-10-21T17:43:34Z" finished-at="2019-10-21T17:43:34Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'username' is required by @Test on method loginToDOMS but has not been marked @Optional or defined
+in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'username' is required by @Test on method loginToDOMS but has not been marked @Optional or defined
+in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToDOMS -->
-        <test-method status="PASS" signature="appendReport(org.testng.ITestResult)[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="appendReport" is-config="true" duration-ms="1388" started-at="2019-10-10T21:24:00Z" finished-at="2019-10-10T21:24:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginToDOMS status=SUCCESS method=PHOENIXLoginTest.loginToDOMS()[pri:1, instance:testcases.PHOENIXLoginTest@8bd1b6a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appendReport -->
-        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@8bd1b6a]" name="closeSessions" is-config="true" duration-ms="1558" started-at="2019-10-10T21:24:01Z" finished-at="2019-10-10T21:24:02Z">
+        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="closeSessions" is-config="true" duration-ms="1141" started-at="2019-10-21T17:43:34Z" finished-at="2019-10-21T17:43:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSessions -->

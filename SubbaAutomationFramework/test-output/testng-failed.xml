@@ -6,4 +6,16 @@
       <class name="testcases.PHOENIXLoginTest"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcases.PHOENIXLoginTest">
+        <methods>
+          <include name="loginToDOMS"/>
+          <include name="setupBrowsers"/>
+          <include name="closeSessions"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- testcases.PHOENIXLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
