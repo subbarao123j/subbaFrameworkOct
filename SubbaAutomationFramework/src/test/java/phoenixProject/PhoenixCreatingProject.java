@@ -52,7 +52,7 @@ WebDriver driver;
 	
 	
 	
-	public void bussDiDropdownSel(String bussDivDropDown, String BU3)
+	public void bussDiDropdownSel(String bussDivDropDown, String bu3)
 	{
 		Utility.waitForWebElement(driver, bussDiv);
 		bussDiv.click();
@@ -62,7 +62,7 @@ WebDriver driver;
 		for(WebElement element:listValues)
 		{
 			String data=element.getText();
-			if(data.equalsIgnoreCase(BU3))
+			if(data.equalsIgnoreCase(bu3))
 			{
 				element.click();
 				break;

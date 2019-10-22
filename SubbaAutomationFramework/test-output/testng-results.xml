@@ -2,31 +2,30 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9684" started-at="2019-10-21T11:23:34Z" finished-at="2019-10-21T11:23:44Z">
+  <suite name="Default suite" duration-ms="10202" started-at="2019-10-22T06:09:55Z" finished-at="2019-10-22T06:10:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9684" started-at="2019-10-21T11:23:34Z" finished-at="2019-10-21T11:23:44Z">
-      <class name="testcases.PHOENIXLoginTest">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupReport" is-config="true" duration-ms="484" started-at="2019-10-21T19:23:34Z" finished-at="2019-10-21T19:23:34Z">
+    <test name="Default test" duration-ms="10202" started-at="2019-10-22T06:09:55Z" finished-at="2019-10-22T06:10:05Z">
+      <class name="testcases.PHOENIXLoginCustAddProLogOut">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginCustAddProLogOut@1ddf84b8]" name="setupReport" is-config="true" duration-ms="631" started-at="2019-10-22T14:09:54Z" finished-at="2019-10-22T14:09:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="setupBrowsers" is-config="true" duration-ms="8544" started-at="2019-10-21T19:23:34Z" finished-at="2019-10-21T19:23:43Z">
+        <test-method status="PASS" signature="setupBrowsers()[pri:0, instance:testcases.PHOENIXLoginCustAddProLogOut@1ddf84b8]" name="setupBrowsers" is-config="true" duration-ms="8998" started-at="2019-10-22T14:09:55Z" finished-at="2019-10-22T14:10:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowsers -->
-        <test-method status="SKIP" signature="loginToDOMS(java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@cb5822]" name="loginToDOMS" duration-ms="0" started-at="2019-10-21T19:23:43Z" finished-at="2019-10-21T19:23:43Z">
+        <test-method status="SKIP" signature="loginToPhoenix(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginCustAddProLogOut@1ddf84b8]" name="loginToPhoenix" duration-ms="0" started-at="2019-10-22T14:10:04Z" description="Login to Phoenix" finished-at="2019-10-22T14:10:04Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'username' is required by @Test on method loginToDOMS but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml]]>
+Method loginToPhoenix requires 4 parameters but 2 were supplied in the @Test annotation.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'username' is required by @Test on method loginToDOMS but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles\PHOENIXLoginTest.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+Method loginToPhoenix requires 4 parameters but 2 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
@@ -53,12 +52,12 @@ in C:\Users\kul_subbarao\git\subbaFrameworkOct\SubbaAutomationFramework\XMLFiles
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToDOMS -->
-        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@cb5822]" name="closeSessions" is-config="true" duration-ms="1097" started-at="2019-10-21T19:23:43Z" finished-at="2019-10-21T19:23:44Z">
+        </test-method> <!-- loginToPhoenix -->
+        <test-method status="PASS" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginCustAddProLogOut@1ddf84b8]" name="closeSessions" is-config="true" duration-ms="1156" started-at="2019-10-22T14:10:04Z" finished-at="2019-10-22T14:10:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSessions -->
-      </class> <!-- testcases.PHOENIXLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testcases.PHOENIXLoginCustAddProLogOut -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

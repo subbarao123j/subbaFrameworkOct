@@ -1,5 +1,7 @@
 package testcases;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -18,13 +20,15 @@ public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 	PHOENIXAddCustomer addCustomer;
 	PhoenixCreatingProject addProject;
 	
-	
+	@FindBy(xpath="//ul[(@id='businessUnit_listbox')]//li") WebElement bussDivDropDown;
 //Testing Demo
 	@Parameters({"username","password"})
 	@Test(description="Login to Phoenix",priority=1)
-	public void loginToPhoenix(String uname, String pass,String bussDivDropDown, String BU3) 
+	
+	public void loginToPhoenix(String uname, String pass) 
 	
 	{
+		
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
 		addCustomer = PageFactory.initElements(driver, PHOENIXAddCustomer.class);
 		addProject = PageFactory.initElements(driver, PhoenixCreatingProject.class);
@@ -80,7 +84,7 @@ public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 	addProject.projectMenuClick();
 	
 	addProject.addProjectClick();
-	addProject.bussDiDropdownSel(bussDivDropDown, BU3);
+	addProject.bussDiDropdownSel(bussDivDropDown.getText(), "BU3");
 	
 	
 	
