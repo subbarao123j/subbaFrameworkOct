@@ -21,7 +21,7 @@ public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 	
 //Testing Demo
 	@Parameters({"username","password"})
-	@Test(description="",priority=1)
+	@Test(description="Login to Phoenix",priority=1)
 	public void loginToPhoenix(String uname, String pass,String bussDivDropDown, String BU3) 
 	
 	{
