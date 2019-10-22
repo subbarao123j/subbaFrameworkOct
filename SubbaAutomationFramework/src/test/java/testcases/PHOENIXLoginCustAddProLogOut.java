@@ -1,4 +1,4 @@
-package testcases.pheonixtestcases;
+package testcases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
