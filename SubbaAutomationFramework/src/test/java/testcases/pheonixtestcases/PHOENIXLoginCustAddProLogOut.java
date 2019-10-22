@@ -1,4 +1,4 @@
-package testcases;
+package testcases.pheonixtestcases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -8,22 +8,26 @@ import helper.BaseClass;
 import phoenixProject.PHOENIXAddCustomer;
 import phoenixProject.PHOENIXLogOut;
 import phoenixProject.PHOENIXLogin;
+import phoenixProject.PhoenixCreatingProject;
 
-public class PHOENIXLoginTest extends BaseClass {
+public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 
 	PHOENIXLogin login;
 	PHOENIXLogOut logOut;
 	
 	PHOENIXAddCustomer addCustomer;
+	PhoenixCreatingProject addProject;
 	
 	
 //Testing Demo
 	@Parameters({"username","password"})
 	@Test(description="",priority=1)
-	public void loginToDOMS(String uname, String pass) {
-
+	public void loginToPhoenix(String uname, String pass,String bussDivDropDown, String BU3) 
+	
+	{
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
 		addCustomer = PageFactory.initElements(driver, PHOENIXAddCustomer.class);
+		addProject = PageFactory.initElements(driver, PhoenixCreatingProject.class);
 		logOut = PageFactory.initElements(driver, PHOENIXLogOut.class);
 		
 		
@@ -65,6 +69,19 @@ public class PHOENIXLoginTest extends BaseClass {
 	logger.info("custmer Pentacode  Added");
 	
 	addCustomer.savedClicked();
+	
+	
+	//Add project Calling
+	
+	
+	addProject.projectListPageValidation();
+	logger.pass("ProjectList Page Validated");
+	
+	addProject.projectMenuClick();
+	
+	addProject.addProjectClick();
+	addProject.bussDiDropdownSel(bussDivDropDown, BU3);
+	
 	
 	
 //Logout

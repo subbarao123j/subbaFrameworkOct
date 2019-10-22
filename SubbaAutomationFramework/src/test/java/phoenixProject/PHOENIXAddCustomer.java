@@ -1,4 +1,4 @@
-package pages;
+package phoenixProject;
 
 
 import org.openqa.selenium.WebDriver;
@@ -22,30 +22,17 @@ public class PHOENIXAddCustomer {
 	
 	
 	@FindBy(xpath="//a[contains(@href,'companies')]") WebElement customersMenu;
-	
 	@FindBy(xpath="//button[@id='add-company']") WebElement customersAdding;
 	
 	
 	
 	@FindBy(id="") WebElement  abc ;
-		
 	@FindBy(name="name") WebElement customerName;
-	
 	@FindBy(id="code") WebElement customerCode;
-	
 	@FindBy(id="pentaCode") WebElement customerPentaCode;
-	
-	
-	
 	@FindBy(xpath="//button[text()='Submit']") WebElement customerSubmit;
 	
-	 
-	
-	
-	
-	
-	
-	
+	 	
 	
 	public void validateHomePage()
 	{

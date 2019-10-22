@@ -4,9 +4,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import helper.BaseClass;
-import pages.PHOENIXAddCustomer;
-import pages.PHOENIXLogOut;
-import pages.PHOENIXLogin;
+import phoenixProject.PHOENIXAddCustomer;
+import phoenixProject.PHOENIXLogOut;
+import phoenixProject.PHOENIXLogin;
 
 public class PHOENIXLoginTest2 extends BaseClass {
 

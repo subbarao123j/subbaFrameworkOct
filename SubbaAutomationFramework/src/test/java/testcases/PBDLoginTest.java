@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 import helper.BaseClass;
 import pages.PBDLogOut;
 import pages.PBDLogin;
-import pages.PHOENIXLogOut;
-import pages.PHOENIXLogin;
+import phoenixProject.PHOENIXLogOut;
+import phoenixProject.PHOENIXLogin;
 
 public class PBDLoginTest extends BaseClass {
 
