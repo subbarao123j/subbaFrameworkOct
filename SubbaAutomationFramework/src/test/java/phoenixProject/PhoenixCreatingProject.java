@@ -24,7 +24,11 @@ WebDriver driver;
 	@FindBy(xpath="//*[contains(@class,'cui-briefcase')]") WebElement projectMenu;
 	@FindBy(id="add-project") WebElement addProject;
 	@FindBy(xpath="//*[contains(text(),'Division')]//following::span[1]") WebElement bussDiv;
-	@FindBy(xpath="//ul[(@id='businessUnit_listbox')]//li") WebElement bussDivDropDown;
+	
+	//@FindBy(xpath="//ul[(@id='businessUnit_listbox')]//li") WebElement bussDivDropDown;
+	
+	@FindBy(xpath="//*[contains(text(),'Operative')]//following::span[1]") WebElement operaUnit;
+	
 	
 	
 	
@@ -50,19 +54,19 @@ WebDriver driver;
 	}
 	
 	
+	//Business Division
 	
-	
-	public void bussDiDropdownSel(String bussDivDropDown, String bu3)
+	public void bussDiDropdownSel(String bd)
 	{
 		Utility.waitForWebElement(driver, bussDiv);
 		bussDiv.click();
 		System.out.println("LOG: Clicked BusinessDivision Clicked "); 
-		List<WebElement> listValues=driver.findElements(By.xpath(bussDivDropDown));
-		System.out.println("Log:INFO- Total values are "+listValues.size());
-		for(WebElement element:listValues)
+		List<WebElement> bdValues=driver.findElements(By.xpath("//ul[(@id='businessUnit_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+bdValues.size());
+		for(WebElement element:bdValues)
 		{
 			String data=element.getText();
-			if(data.equalsIgnoreCase(bu3))
+			if(data.equalsIgnoreCase(bd))
 			{
 				element.click();
 				break;
@@ -71,10 +75,25 @@ WebDriver driver;
 	}
 	
 	
+	//Operative Unit
 	
-	
-	
-	
+	public void operatingUnitClick(String ou)
+	{
+		Utility.waitForWebElement(driver, operaUnit);
+		operaUnit.click();
+		System.out.println("LOG: Clicked Operating Division Clicked "); 
+		List<WebElement> ouValues=driver.findElements(By.xpath("//ul[(@id='operativeUnit_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+ouValues.size());
+		for(WebElement element:ouValues)
+		{
+			String data=element.getText();
+			if(data.equalsIgnoreCase(ou))
+			{
+				element.click();
+				break;
+			}
+		}
+	}
 	
 	
 	

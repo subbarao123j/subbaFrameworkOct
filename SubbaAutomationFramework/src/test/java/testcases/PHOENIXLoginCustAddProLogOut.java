@@ -20,12 +20,12 @@ public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 	PHOENIXAddCustomer addCustomer;
 	PhoenixCreatingProject addProject;
 	
-	@FindBy(xpath="//ul[(@id='businessUnit_listbox')]//li") WebElement bussDivDropDown;
+
 //Testing Demo
-	@Parameters({"username","password"})
+	//@Parameters({"username","password"})
 	@Test(description="Login to Phoenix",priority=1)
 	
-	public void loginToPhoenix(String uname, String pass) 
+	public void loginToPhoenix() 
 	
 	{
 		
@@ -42,11 +42,11 @@ public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 
 		logger.pass("Home Page Validated");
 		
-		login.enterUserName(uname);
+		login.enterUserName();
 
 		logger.info("Username entered");
 
-		login.enterPassword(pass);
+		login.enterPassword();
 
 		logger.info("Password entered");
 
@@ -84,8 +84,9 @@ public class PHOENIXLoginCustAddProLogOut extends BaseClass {
 	addProject.projectMenuClick();
 	
 	addProject.addProjectClick();
-	addProject.bussDiDropdownSel(bussDivDropDown.getText(), "BU3");
+	addProject.bussDiDropdownSel( "BU3");
 	
+	addProject.operatingUnitClick("Muscat");
 	
 	
 //Logout
