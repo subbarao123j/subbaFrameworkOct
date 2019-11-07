@@ -11,14 +11,15 @@ import phoenixProject.PHOENIXLogin;
 public class PHOENIXLoginTest2 extends BaseClass {
 
 	PHOENIXLogin login;
+	PHOENIXLogOut logOut;
 	
-	
-	PHOENIXAddCustomer addCustomer;
+
 
 	@Test(description="LoginPhoenix",priority=1)
 	public void loginToPHOENIX() {
 
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
+		logOut = PageFactory.initElements(driver, PHOENIXLogOut.class);
 		
 		
 		logger = report.createTest("Login Test for Phoenix");
@@ -38,6 +39,11 @@ public class PHOENIXLoginTest2 extends BaseClass {
 		login.clickLoginButton();
 
 	logger.info("Clicked on Login button ");
+	
+	//Logout
+			logOut.logoutFromApplication();
+
+			logger.pass("User is able to logout");
 	
 	}
 	
