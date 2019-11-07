@@ -49,11 +49,13 @@ public class BaseClass {
 		driver = BrowserFactory.startApplication(browser,appURL);
 		
 		
-		//DataProviderFactory.getConfig().getBrowser()
-		//DataProviderFactory.getConfig().getStagingURL()
+		
 		
 		System.out.println("LOG:INFO: Browser Session Created");
 	}
+	
+	//DataProviderFactory.getConfig().getBrowser()
+	//DataProviderFactory.getConfig().getStagingURL()
 	
 	@AfterMethod
 	public void appendReport(ITestResult result)
