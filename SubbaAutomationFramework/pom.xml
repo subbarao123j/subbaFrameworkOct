@@ -93,6 +93,8 @@
 				<xmlfiles>${xmlfiles}</xmlfiles>
 				<UserName>${username}</UserName>
 				<Password>${password}</Password>
+				<URL>${URL}</URL>
+				<Browser>${myBrowser}</Browser>
 				
 				
 			<!-- 	<Browser>${Browser}</Browser>
