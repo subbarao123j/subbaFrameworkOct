@@ -26,6 +26,8 @@ public class BaseClass {
 	public ExtentReports report;
 	public ExtentTest logger;
 	
+	
+	@Parameters({"myBrowser","URL"})
 	@BeforeSuite
 	public void setupReport()
 	{
@@ -45,7 +47,7 @@ public class BaseClass {
 	
 	
 	@BeforeClass
-	@Parameters({"myBrowser","URL"})
+
 	public void setupBrowsers(String browser,String appURL)
 	{	
 		System.out.println("LOG:INFO: Creating Browser Session");
