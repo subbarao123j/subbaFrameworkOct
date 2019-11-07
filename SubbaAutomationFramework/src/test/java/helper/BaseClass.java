@@ -48,10 +48,10 @@ public class BaseClass {
 	
 	@BeforeClass
 
-	public void setupBrowsers(String browser,String appURL)
+	public void setupBrowsers(String browser1,String appURL1)
 	{	
 		System.out.println("LOG:INFO: Creating Browser Session");
-		driver = BrowserFactory.startApplication(browser,appURL);
+		driver = BrowserFactory.startApplication(browser1,appURL1);
 						
 		System.out.println("LOG:INFO: Browser Session Created");
 	}
