@@ -93,8 +93,8 @@
 				<xmlfiles>${xmlfiles}</xmlfiles>
 				<UserName>${username}</UserName>
 				<Password>${password}</Password>
-				<Browser>${myBrowser}</Browser>
-				<URL>${URL}</URL>
+				<SubbaBrowsers>${myBrowser}</SubbaBrowsers>
+				<SubbaURL>${URL}</SubbaURL>
 			
 				
 						

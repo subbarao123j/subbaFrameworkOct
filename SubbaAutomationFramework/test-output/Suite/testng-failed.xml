@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="myBrowser" value="chrome"/>
+  <parameter name="url" value="http://10.9.80.189:9001/login"/>
   <test thread-count="5" name="Test">
+    <parameter name="myBrowser" value="chrome"/>
+    <parameter name="url" value="http://10.9.80.189:9001/login"/>
     <classes>
       <class name="testcases.PHOENIXLoginTest"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
+    <parameter name="myBrowser" value="chrome"/>
+    <parameter name="url" value="http://10.9.80.189:9001/login"/>
     <classes>
       <class name="testcases.PHOENIXLoginTest">
         <methods>
-          <include name="loginToDOMS"/>
           <include name="setupBrowsers"/>
-          <include name="closeSessions"/>
+          <include name="loginToPhoenix"/>
           <include name="setupReport"/>
         </methods>
       </class> <!-- testcases.PHOENIXLoginTest -->
