@@ -96,17 +96,8 @@
 				<URL>${URL}</URL>
 				<Browser>${myBrowser}</Browser>
 				
-				
-			<!-- 	<Browser>${Browser}</Browser>
-				<URL>${URL}</URL> -->
-				
-				<!-- <Browser>${Browser}</Browser>
-				<URL>${URL}</URL>
-				<UserName>${UserName}</UserName>
-				<Password>${Password}</Password> -->
-				
-				
-				
+						
+												
 				
 				</systemPropertyVariables>
 				
