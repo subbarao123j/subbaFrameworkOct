@@ -43,16 +43,14 @@ public class BaseClass {
 		
 	}
 	
-	@Parameters({"myBrowser","URL"})
+	
 	@BeforeClass
+	@Parameters({"myBrowser","URL"})
 	public void setupBrowsers(String browser,String appURL)
 	{	
 		System.out.println("LOG:INFO: Creating Browser Session");
 		driver = BrowserFactory.startApplication(browser,appURL);
-		
-		
-		
-		
+						
 		System.out.println("LOG:INFO: Browser Session Created");
 	}
 	
