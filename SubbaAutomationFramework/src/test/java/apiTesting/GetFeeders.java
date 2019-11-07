@@ -10,7 +10,7 @@ import com.google.gson.JsonObject;
 import io.restassured.RestAssured;
 import junit.framework.Assert;
 
-public class GetData {
+public class GetFeeders {
 	
 	
 	
@@ -22,7 +22,7 @@ public class GetData {
 		int code = RestAssured
 		.given()
 		.header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NzE4OTAwMTYsImlzcyI6IlBTSSBJbmNvbnRyb2wgU2RuIEJoZCIsIm5hbWUiOiJtdm9yciIsInJvbGUiOiIzcmQgcGFydHkgc3lzdGVtIn0.K-iFraX5b5J6VOsEaQez4XSIJCRND1EHHF0AvTXRfcc")
-		.get("http://10.9.82.13:9001/mvorr/api/v1/get-substations")
+		.get("http://10.9.82.13:9001/mvorr/api/v1/get-feeders")
 		.getStatusCode();
 		System.out.println(code);
 		
@@ -40,7 +40,7 @@ public class GetData {
 		String  data = RestAssured
 		.given()
 		.header("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NzE4OTAwMTYsImlzcyI6IlBTSSBJbmNvbnRyb2wgU2RuIEJoZCIsIm5hbWUiOiJtdm9yciIsInJvbGUiOiIzcmQgcGFydHkgc3lzdGVtIn0.K-iFraX5b5J6VOsEaQez4XSIJCRND1EHHF0AvTXRfcc")
-		.get("http://10.9.82.13:9001/mvorr/api/v1/get-substations")
+		.get("http://10.9.82.13:9001/mvorr/api/v1/get-feeders")
 		.getBody().asString();
 		
 	

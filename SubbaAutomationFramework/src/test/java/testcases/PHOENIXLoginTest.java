@@ -17,10 +17,10 @@ public class PHOENIXLoginTest extends BaseClass {
 	PHOENIXAddCustomer addCustomer;
 	
 	
-//Testing Demo
-	@Parameters({"username","password"})
+
+	@Parameters({"username","password","URL","myBrowser"})
 	@Test(description="",priority=1)
-	public void loginToDOMS(String uname, String pass) {
+	public void loginToDOMS(String uname, String pass,String appURL,String browser) {
 
 		login = PageFactory.initElements(driver, PHOENIXLogin.class);
 		addCustomer = PageFactory.initElements(driver, PHOENIXAddCustomer.class);

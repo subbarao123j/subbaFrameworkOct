@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -40,14 +41,17 @@ public class BaseClass {
 		
 	}
 	
-	
+	@Parameters({"URL","myBrowser"})
 	@BeforeClass
-	public void setupBrowsers()
+	public void setupBrowsers(String appURL,String browser)
 	{	
 		System.out.println("LOG:INFO: Creating Browser Session");
-		driver = BrowserFactory.startApplication(
-				 DataProviderFactory.getConfig().getBrowser()
-				,DataProviderFactory.getConfig().getStagingURL());
+		driver = BrowserFactory.startApplication(appURL,browser);
+		
+		
+		//DataProviderFactory.getConfig().getBrowser()
+		//DataProviderFactory.getConfig().getStagingURL()
+		
 		System.out.println("LOG:INFO: Browser Session Created");
 	}
 	

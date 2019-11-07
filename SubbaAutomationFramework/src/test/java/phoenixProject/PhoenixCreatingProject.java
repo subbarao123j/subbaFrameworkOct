@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import dataProviderFactory.DataProviderFactory;
 import helper.Utility;
 
 public class PhoenixCreatingProject {
@@ -28,8 +29,22 @@ WebDriver driver;
 	//@FindBy(xpath="//ul[(@id='businessUnit_listbox')]//li") WebElement bussDivDropDown;
 	
 	@FindBy(xpath="//*[contains(text(),'Operative')]//following::span[1]") WebElement operaUnit;
+	@FindBy(xpath="//label[contains(text(),'Customer')]//following::span[1]") WebElement customer;
+	@FindBy(xpath="//label[contains(text(),'End Customer')]//following::span[1]") WebElement endCustomer;
+	@FindBy(xpath="//label[contains(text(),'INCO')]//following::span[1]") WebElement incoTerms;
 	
 	
+	@FindBy(id="expectedStartDate") WebElement expStartDate;
+	@FindBy(xpath="dateOfCompletion") WebElement dateCompletion;
+	@FindBy(xpath="endOfWarranty") WebElement endWarranty;
+	@FindBy(xpath="contractValue") WebElement contrtValue;
+	@FindBy(xpath="engineeringHour") WebElement engineerHour;
+	
+	
+	
+	
+	@FindBy(xpath="//label[contains(text(),'Contractual')]//following::span[1]") WebElement contCurrency;
+	@FindBy(xpath="//label[contains(text(),'Local')]//following::span[1]") WebElement localCurrency;
 	
 	
 	public void projectListPageValidation()
@@ -94,6 +109,175 @@ WebDriver driver;
 			}
 		}
 	}
+	
+	
+	
+	//Expected Order Intake
+	
+	
+	
+	//Project Name
+	
+	//Project Code
+	
+	//SAGE Code
+	
+	
+	//Customer
+	public void customerClick(String cu)
+	{
+		Utility.waitForWebElement(driver, customer);
+		customer.click();
+		System.out.println("LOG: Clicked Operating Division Clicked "); 
+		List<WebElement> cuValues=driver.findElements(By.xpath("//ul[(@id='customer_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+cuValues.size());
+		for(WebElement element:cuValues)
+		{
+			String data=element.getText();
+			if(data.equalsIgnoreCase(cu))
+			{
+				element.click();
+				break;
+			}
+		}
+	}
+	
+	
+	
+	//End Customer
+	public void endCustomerClick(String cu)
+	{
+		Utility.waitForWebElement(driver, endCustomer);
+		endCustomer.click();
+		System.out.println("LOG: Clicked EndCustomer  Clicked "); 
+		List<WebElement> endcuValues=driver.findElements(By.xpath("//ul[(@id='endCustomer_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+endcuValues.size());
+		for(WebElement element:endcuValues)
+		{
+			String data=element.getText();
+			if(data.equalsIgnoreCase(cu))
+			{
+				element.click();
+				break;
+			}
+		}
+	}
+	
+	//INCO Terms
+	public void incoTermsClick(String cu)
+	{
+		Utility.waitForWebElement(driver, incoTerms);
+		incoTerms.click();
+		System.out.println("LOG: Clicked Operating Division Clicked "); 
+		List<WebElement> incoTermsValues=driver.findElements(By.xpath("//ul[(@id='incoTerms_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+incoTermsValues.size());
+		for(WebElement element:incoTermsValues)
+		{
+			String data=element.getText();
+			if(data.equalsIgnoreCase(cu))
+			{
+				element.click();
+				break;
+			}
+		}
+	}
+	
+	//Expected Start Date
+	public void enterExpectedStartdate  ()
+	{
+		
+		//Utility.waitForWebElement(driver,enterExpectedStartdate).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 2));
+		System.out.println("LOG:INFO PentaCode Entered");
+	}
+	
+	//Date Of Completion
+	public void dateOfcompletion()
+	{
+		
+		//Utility.waitForWebElement(driver,dateOfcompletion).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 2));
+		System.out.println("LOG:INFO PentaCode Entered");
+	}
+	
+	//End of Warranty
+	public void endOfWarrenty()
+	{
+		
+		//Utility.waitForWebElement(driver,endOfWarrenty).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 2));
+		System.out.println("LOG:INFO PentaCode Entered");
+	}
+	
+	//Contract Value
+	public void contractValue()
+	{
+		
+		//Utility.waitForWebElement(driver,customerPentaCode).sendKeys(DataProviderFactory.getExcel().getCellData("addCustomer", 1, 2));
+		System.out.println("LOG:INFO PentaCode Entered");
+	}
+	
+	//Engineering Hour rate
+	public void engineeringHourrate()
+	{
+		
+	}
+	
+	//Contractual Currency
+	public void contractualCurrencyClick(String cu)
+	{
+		Utility.waitForWebElement(driver, customer);
+		customer.click();
+		System.out.println("LOG: Clicked Operating Division Clicked "); 
+		List<WebElement> cuValues=driver.findElements(By.xpath("//ul[(@id='contractualCurrency_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+cuValues.size());
+		for(WebElement element:cuValues)
+		{
+			String data=element.getText();
+			if(data.equalsIgnoreCase(cu))
+			{
+				element.click();
+				break;
+			}
+		}
+	}
+	
+	//Local Currency
+	public void localCurrencyClick(String cu)
+	{
+		Utility.waitForWebElement(driver, customer);
+		customer.click();
+		System.out.println("LOG: Clicked Operating Division Clicked "); 
+		List<WebElement> loValues=driver.findElements(By.xpath("//ul[(@id='localCurrency_listbox')]//li"));
+		System.out.println("Log:INFO- Total values are "+loValues.size());
+		for(WebElement element:loValues)
+		{
+			String data=element.getText();
+			if(data.equalsIgnoreCase(cu))
+			{
+				element.click();
+				break;
+			}
+		}
+	}
+	
+	//Exchange Rate
+	
+	
+	//Save
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6616" started-at="2019-10-23T06:17:28Z" finished-at="2019-10-23T06:17:35Z">
+  <suite name="Default suite" duration-ms="24715" started-at="2019-11-04T02:50:53Z" finished-at="2019-11-04T02:51:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6616" started-at="2019-10-23T06:17:28Z" finished-at="2019-10-23T06:17:35Z">
-      <class name="apiTesting.GetData">
-        <test-method status="PASS" signature="testContent()[pri:0, instance:apiTesting.GetData@29774679]" name="testContent" duration-ms="6205" started-at="2019-10-23T14:17:28Z" finished-at="2019-10-23T14:17:35Z">
+    <test name="Default test" duration-ms="24715" started-at="2019-11-04T02:50:53Z" finished-at="2019-11-04T02:51:18Z">
+      <class name="apiTesting.GetFeeders">
+        <test-method status="PASS" signature="testContent()[pri:0, instance:apiTesting.GetFeeders@29774679]" name="testContent" duration-ms="24609" started-at="2019-11-04T10:50:53Z" finished-at="2019-11-04T10:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContent -->
-        <test-method status="PASS" signature="testStatusCode()[pri:0, instance:apiTesting.GetData@29774679]" name="testStatusCode" duration-ms="352" started-at="2019-10-23T14:17:35Z" finished-at="2019-10-23T14:17:35Z">
+        <test-method status="PASS" signature="testStatusCode()[pri:0, instance:apiTesting.GetFeeders@29774679]" name="testStatusCode" duration-ms="69" started-at="2019-11-04T10:51:18Z" finished-at="2019-11-04T10:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatusCode -->
-      </class> <!-- apiTesting.GetData -->
+      </class> <!-- apiTesting.GetFeeders -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
