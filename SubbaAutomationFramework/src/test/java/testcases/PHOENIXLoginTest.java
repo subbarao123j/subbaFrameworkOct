@@ -16,7 +16,7 @@ public class PHOENIXLoginTest extends BaseClass {
 	
 	PHOENIXAddCustomer addCustomer;
 	
-	@Parameters({"username","password","myBrowser","URL"})
+	@Parameters({"username","password"})
 	@Test(description="",priority=1)
 	public void loginToPhoenix(String uname, String pass,String browser,String appURL) {
 

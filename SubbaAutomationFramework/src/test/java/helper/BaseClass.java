@@ -25,9 +25,7 @@ public class BaseClass {
 	public	WebDriver driver;
 	public ExtentReports report;
 	public ExtentTest logger;
-	
-	
-	@Parameters({"myBrowser","URL"})
+
 	@BeforeSuite
 	public void setupReport()
 	{
@@ -47,11 +45,11 @@ public class BaseClass {
 	
 	
 	@BeforeClass
-
-	public void setupBrowsers(String browser1,String appURL1)
+	@Parameters({"myBrowser","URL"})
+	public void setupBrowsers(String myBrowser,String URL)
 	{	
 		System.out.println("LOG:INFO: Creating Browser Session");
-		driver = BrowserFactory.startApplication(browser1,appURL1);
+		driver = BrowserFactory.startApplication(myBrowser,URL);
 						
 		System.out.println("LOG:INFO: Browser Session Created");
 	}
