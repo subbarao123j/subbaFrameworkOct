@@ -38,6 +38,7 @@ public class ExcelDataProvider {
 		
 	}
 	
+
 	
 	public static String formTheListforAllCellsForString(Cell cell, String rowDataList) {
 
@@ -87,6 +88,11 @@ public class ExcelDataProvider {
 		}
 		return rowDataList;
 
+	}
+
+	public CharSequence getCellData(String string, int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

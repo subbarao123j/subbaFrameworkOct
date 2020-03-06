@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70548" started-at="2020-02-13T05:26:20Z" finished-at="2020-02-13T05:27:31Z">
+  <suite name="Default suite" duration-ms="15" started-at="2020-03-06T08:40:18Z" finished-at="2020-03-06T08:40:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70548" started-at="2020-02-13T05:26:20Z" finished-at="2020-02-13T05:27:31Z">
-      <class name="dataProviderFactory.Addproject_NEW_BU1">
-        <test-method status="PASS" signature="creatingProject()[pri:0, instance:dataProviderFactory.Addproject_NEW_BU1@1e88b3c]" name="creatingProject" duration-ms="70513" started-at="2020-02-13T13:26:20Z" finished-at="2020-02-13T13:27:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creatingProject -->
-      </class> <!-- dataProviderFactory.Addproject_NEW_BU1 -->
+    <test name="Default test" duration-ms="15" started-at="2020-03-06T08:40:18Z" finished-at="2020-03-06T08:40:18Z">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

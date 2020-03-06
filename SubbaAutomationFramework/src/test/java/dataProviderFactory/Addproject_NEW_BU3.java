@@ -37,7 +37,7 @@ public class Addproject_NEW_BU3 {
 		String targetPath = "D:\\1 PROJECTS\\7 PHOENIX\\2020\\PSI PROJECTS\\Testing";
 		//File directory = new File("D:\\1 PROJECTS\\7 PHOENIX\\2020\\PSI PROJECTS\\Testing");
 		
-		File directory = new File("J:\\RandD\\Active_Projects\\MY18_07_I0242_Phoenix\\5_SysDevelop\\5_Commiss\\Migration\\KUL\\test");
+		File directory = new File("D:\\1 PROJECTS\\7 PHOENIX\\2020\\BU3-Forecast");
 		
 		File[] files = directory.listFiles();
 		for(File item : files)
@@ -58,7 +58,7 @@ public class Addproject_NEW_BU3 {
 				
 				//driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.SECONDS);
 				
-				driver.get("http://10.9.80.189:9001/login");
+				driver.get("http://10.9.80.189:7777/login");
 				
 				System.out.println(driver.getTitle());
 				

@@ -52,7 +52,7 @@ public class PHOENIXLogin {
 	public void enterUserName()
 	{
 		
-		Utility.waitForWebElement(driver,username).sendKeys(DataProviderFactory.getExcel().getCellData("Login", 3, 0));
+		//Utility.waitForWebElement(driver,username).sendKeys(DataProviderFactory.getExcel());
 		System.out.println("LOG:INFO Username Entered");
 	}
 	

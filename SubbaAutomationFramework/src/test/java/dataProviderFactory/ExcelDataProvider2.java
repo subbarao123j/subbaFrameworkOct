@@ -38,7 +38,7 @@ public class ExcelDataProvider2 {
 		
 	}
 	
-	
+
 	public static String formTheListforAllCellsForString(Cell cell, String rowDataList) {
 
 		if(cell!=null) {
