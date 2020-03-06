@@ -1,137 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33" started-at="2019-11-07T07:40:26Z" finished-at="2019-11-07T07:40:26Z">
+  <suite name="Default suite" duration-ms="70548" started-at="2020-02-13T05:26:20Z" finished-at="2020-02-13T05:27:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33" started-at="2019-11-07T07:40:26Z" finished-at="2019-11-07T07:40:26Z">
-      <class name="testcases.PHOENIXLoginTest">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@42d80b78]" name="setupReport" is-config="true" duration-ms="332" started-at="2019-11-07T15:40:26Z" finished-at="2019-11-07T15:40:26Z">
+    <test name="Default test" duration-ms="70548" started-at="2020-02-13T05:26:20Z" finished-at="2020-02-13T05:27:31Z">
+      <class name="dataProviderFactory.Addproject_NEW_BU1">
+        <test-method status="PASS" signature="creatingProject()[pri:0, instance:dataProviderFactory.Addproject_NEW_BU1@1e88b3c]" name="creatingProject" duration-ms="70513" started-at="2020-02-13T13:26:20Z" finished-at="2020-02-13T13:27:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method status="FAIL" signature="setupBrowsers(java.lang.String, java.lang.String)[pri:0, instance:testcases.PHOENIXLoginTest@42d80b78]" name="setupBrowsers" is-config="true" duration-ms="0" started-at="2019-11-07T15:40:26Z" finished-at="2019-11-07T15:40:26Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'myBrowser' is required by @Configuration on method setupBrowsers but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-1419623621\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'myBrowser' is required by @Configuration on method setupBrowsers but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-1419623621\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowsers -->
-        <test-method status="SKIP" signature="setupBrowsers(java.lang.String, java.lang.String)[pri:0, instance:testcases.PHOENIXLoginTest@42d80b78]" name="setupBrowsers" duration-ms="0" started-at="2019-11-07T15:40:26Z" finished-at="2019-11-07T15:40:26Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'myBrowser' is required by @Test on method setupBrowsers but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-1419623621\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'myBrowser' is required by @Test on method setupBrowsers but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-1419623621\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowsers -->
-        <test-method status="SKIP" signature="loginToPhoenix(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@42d80b78]" name="loginToPhoenix" duration-ms="0" started-at="2019-11-07T15:40:26Z" finished-at="2019-11-07T15:40:26Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'username' is required by @Test on method loginToPhoenix but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-1419623621\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'username' is required by @Test on method loginToPhoenix but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-1419623621\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToPhoenix -->
-        <test-method status="SKIP" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@42d80b78]" name="closeSessions" is-config="true" duration-ms="0" started-at="2019-11-07T15:40:26Z" finished-at="2019-11-07T15:40:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeSessions -->
-      </class> <!-- testcases.PHOENIXLoginTest -->
+        </test-method> <!-- creatingProject -->
+      </class> <!-- dataProviderFactory.Addproject_NEW_BU1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

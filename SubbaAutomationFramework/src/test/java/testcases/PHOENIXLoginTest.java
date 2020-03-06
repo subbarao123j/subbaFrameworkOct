@@ -24,7 +24,7 @@ public class PHOENIXLoginTest extends BaseClass {
 		addCustomer = PageFactory.initElements(driver, PHOENIXAddCustomer.class);
 		logOut = PageFactory.initElements(driver, PHOENIXLogOut.class);
 		
-		
+	
 
 		logger = report.createTest("Login Test for Phoenix");
 
