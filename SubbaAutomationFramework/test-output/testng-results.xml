@@ -2,27 +2,26 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32" started-at="2020-06-24T11:35:34Z" finished-at="2020-06-24T11:35:34Z">
+  <suite name="Default suite" duration-ms="35" started-at="2020-06-24T11:44:15Z" finished-at="2020-06-24T11:44:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32" started-at="2020-06-24T11:35:34Z" finished-at="2020-06-24T11:35:34Z">
+    <test name="Default test" duration-ms="35" started-at="2020-06-24T11:44:15Z" finished-at="2020-06-24T11:44:15Z">
       <class name="testcases.PHOENIXLoginTest">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@6a4f787b]" name="setupReport" is-config="true" duration-ms="307" started-at="2020-06-24T19:35:34Z" finished-at="2020-06-24T19:35:34Z">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.PHOENIXLoginTest@6a4f787b]" name="setupReport" is-config="true" duration-ms="296" started-at="2020-06-24T19:44:15Z" finished-at="2020-06-24T19:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="SKIP" signature="loginToPhoenix(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@6a4f787b]" name="loginToPhoenix" duration-ms="0" started-at="2020-06-24T19:35:34Z" finished-at="2020-06-24T19:35:34Z">
+        <test-method status="SKIP" signature="loginToPhoenix(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.PHOENIXLoginTest@6a4f787b]" name="loginToPhoenix" duration-ms="0" started-at="2020-06-24T19:44:15Z" finished-at="2020-06-24T19:44:15Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'username' is required by @Test on method loginToPhoenix but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-61824757\testng-customsuite.xml]]>
+Method loginToPhoenix requires 4 parameters but 2 were supplied in the @Test annotation.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'username' is required by @Test on method loginToPhoenix but has not been marked @Optional or defined
-in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-61824757\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+Method loginToPhoenix requires 4 parameters but 2 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
@@ -50,7 +49,7 @@ in C:\Users\kul_subbarao\AppData\Local\Temp\testng-eclipse-61824757\testng-custo
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToPhoenix -->
-        <test-method status="FAIL" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@6a4f787b]" name="closeSessions" is-config="true" duration-ms="0" started-at="2020-06-24T19:35:34Z" finished-at="2020-06-24T19:35:34Z">
+        <test-method status="FAIL" signature="closeSessions()[pri:0, instance:testcases.PHOENIXLoginTest@6a4f787b]" name="closeSessions" is-config="true" duration-ms="0" started-at="2020-06-24T19:44:15Z" finished-at="2020-06-24T19:44:15Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

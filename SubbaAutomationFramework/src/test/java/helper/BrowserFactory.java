@@ -11,8 +11,7 @@ import org.testng.annotations.Parameters;
 
 public class BrowserFactory {
 	
-	@Parameters({"myBrowser","URL"})
-	@BeforeClass
+	
 	public static WebDriver startApplication(String browser,String appURL) 
 	{
 		WebDriver driver = null;

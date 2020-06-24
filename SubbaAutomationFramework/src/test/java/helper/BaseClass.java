@@ -43,7 +43,7 @@ public class BaseClass {
 		
 	}
 	
-	@Configuration
+	
 	@Parameters({"myBrowser","URL"})
 	@BeforeClass
 		public void setupBrowsers(String myBrowser,String URL)
