@@ -54,9 +54,9 @@ public class PHOENIXAddCustomerLogout extends BaseClass {
 	
 	
 //Logout
-		logOut.logoutFromApplication();
+		//logOut.logoutFromApplication();
 
-		logger.pass("User is able to logout");
+		//logger.pass("User is able to logout");
 	}
 
 	
