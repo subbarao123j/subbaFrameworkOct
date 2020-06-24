@@ -11,12 +11,12 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 
 
@@ -25,11 +25,7 @@ public class Addproject_NEW_BU3 {
 	
 	static XSSFWorkbook wb;
 	
-	@Test
-	
-	
-	
-	//subba code
+	@Test//subba code
 	public void creatingProject() throws InterruptedException {
 		
 		WebDriver driver;
