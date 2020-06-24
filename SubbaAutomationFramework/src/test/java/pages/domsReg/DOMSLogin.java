@@ -1,4 +1,4 @@
-package pages;
+package pages.domsReg;
 
 
 import org.openqa.selenium.WebDriver;
