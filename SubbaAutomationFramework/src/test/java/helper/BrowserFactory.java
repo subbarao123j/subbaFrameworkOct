@@ -2,14 +2,17 @@ package helper;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Parameters;
 
 public class BrowserFactory {
 	
-	
+	@Parameters({"myBrowser","URL"})
+	@BeforeClass
 	public static WebDriver startApplication(String browser,String appURL) 
 	{
 		WebDriver driver = null;

@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.Configuration;
 import org.testng.annotations.Parameters;
 
 
@@ -43,12 +43,13 @@ public class BaseClass {
 		
 	}
 	
+	@Configuration
 	@Parameters({"myBrowser","URL"})
 	@BeforeClass
-		public void setupBrowsers(String browser,String url)
+		public void setupBrowsers(String myBrowser,String URL)
 	{	
 		System.out.println("LOG:INFO: Creating Browser Session");
-		driver = BrowserFactory.startApplication(browser,url);
+		driver = BrowserFactory.startApplication(myBrowser,URL);
 						
 		System.out.println("LOG:INFO: Browser Session Created");
 	}
