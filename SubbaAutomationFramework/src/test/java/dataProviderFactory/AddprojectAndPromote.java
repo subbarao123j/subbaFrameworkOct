@@ -1,6 +1,7 @@
 package dataProviderFactory;
 
 import java.io.IOException;
+//import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +19,7 @@ import org.testng.annotations.Test;
 public class AddprojectAndPromote {
 	
 	
-	@Test
+	//@Test
 	//subba code
 	public void creatingProject() throws InterruptedException, IOException {
 		
