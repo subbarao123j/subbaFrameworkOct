@@ -1,6 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import helper.BaseClass;
@@ -13,6 +14,8 @@ public class DOMSLoginTest extends BaseClass {
 
 	DOMSLogin login;
 	DOMSLogOut logOut;
+	
+	@Parameters({"username","password","myBrowser","URL"})
 
 	@Test(description="",priority=1)
 	public void loginToDOMS() {
